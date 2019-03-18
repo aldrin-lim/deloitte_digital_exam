@@ -13,7 +13,7 @@ export default class MissionList extends Component {
         <div className="list">
           <div className="desc">
             <h1>{props.rocket.rocket_name} - {props.payloads[0].payload_id} { props.launch_success === false && (<>- <span style={{color: "#ec5f7a"}}>Failed Mission</span></>) }</h1>
-            <p>Launched at <b>{date.format('MMMM Do')}</b> at <b>{date.format('h:mma')}</b> from <b>{props.launch_site.full_name}</b></p>
+            <p>Launched at <b>{date.format('MMMM Do YYYY')}</b> at <b>{date.format('h:mma')}</b> from <b>{props.launch_site.full_name}</b></p>
             <div className="actions">
               <button className="uk-button uk-button-default">Reddit Campaign</button>
               <button className="uk-button uk-button-default">Reddit Launch</button>

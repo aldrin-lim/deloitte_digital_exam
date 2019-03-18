@@ -21,7 +21,6 @@ class App extends Component {
           </div>
           <div className="container">
             <div className="uk-card uk-card-default uk-card-small uk-card-body">
-              <Form />
               <Mission />
             </div>
           </div>
