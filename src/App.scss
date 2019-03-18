@@ -23,7 +23,9 @@
 body {
   margin: 0;
   padding: 0;
-  
+  &.in-transition {
+    transition: transform 900ms ease;
+  }
 }
 
 .logo-container {
@@ -47,6 +49,21 @@ button {
 .uk-button.uk-button-default {
   color: #888 !important;
   line-height: 32px;
+}
+
+.footer {
+  background: #eaedf1;
+  display: flex;
+  padding: 0 5% 10px 5%;
+  span {
+    flex: 1;
+    text-align: left;
+    color: #888;
+  } 
+  a {
+    text-decoration: underline;
+    color: #333;
+  }
 }
 
 
