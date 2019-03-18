@@ -1,0 +1,63 @@
+
+.mission-list {
+  display: flex;
+  padding: 10px;
+  .pic {
+    margin-right: 50px;
+
+    width: 80px;
+    height: 80px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .list {
+    flex: 1;
+    display: flex;
+    .desc {
+      flex: 1;
+      h1 {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: .9em;
+        margin: 10px 0;
+      }
+      .actions {
+        margin-top: 40px;
+        button {
+          text-transform: capitalize;
+          &:nth-child(1){
+            margin-left: 0;
+          }
+          margin: 0 10px;
+          
+        }
+      }
+    }
+    .flight-number {
+      width: 10%;
+      text-align: center;
+      h1 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+      }
+      p {
+        font-size: .9em;
+        margin: 0;
+      }
+    }
+    
+  }
+}
+
+.mission-count {
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: #888;
+}

@@ -2,6 +2,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  
   color: #2c3e50;
 }
 
@@ -22,6 +23,7 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .logo-container {
@@ -34,26 +36,50 @@ body {
   height: 150px;
 }
 
+.uk-input, .uk-select, button, select {
+  border-color: #e9ecef !important;
+  border-radius: 3px;
+  border-width: 2px !important;
+}
+button {
+  border-width: 2px; 
+}
+.uk-button.uk-button-default {
+  color: #888 !important;
+  line-height: 32px;
+}
+
 
 .header {
-  height: 100vh;
+  height: auto;
+  max-height: 100vh;
   overflow: hidden;
   position: relative;
   display: flex;
   text-emphasis: center;
+  background-color: #000;
+  &.hide {
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+  }
   img {
     width: 100%;
-    position: absolute;
+    height: auto;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
+    opacity: .4;
   }
   h1 {
     font-size: 4em;
     z-index: 2;
     margin: auto;
     color: #fff;
-    z-index: 2;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    font-family: 'Lato', sans-serif !important;
   }
   a {
     color: #fff;
@@ -62,5 +88,11 @@ body {
     bottom: 5vh;
     left: 50%;
   }
+}
+
+.container {
+  text-align: left;
+  background-color: #eaedf1;
+  padding: 2.5% 5%;
 }
 
